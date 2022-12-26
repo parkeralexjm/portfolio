@@ -1,19 +1,20 @@
 import React from 'react'
-import { Card, Grid, Typography } from '@mui/material'
+import { Card, Grid } from '@mui/material'
+import appimg from '../assets/Weather.png'
 
 const Weather = () => {
   return (
+    <Card elevation={4}>
     <Grid container sx={{ marginTop: '0.5rem'}}>
-      <Grid xs={6}>
-        <Card elevation={4}>
-          <h2>Weather App</h2>
-          <p>A campfire themed app to display the weather in the chosen country including a 3 hour breakdown</p>
-        </Card>
+      <Grid xs={6} container sx={{ justifyContent: "center"}}>
+        <img src={`${appimg}`} alt='Weather App' loading='lazy' width={'75%'}></img>
       </Grid>
       <Grid xs={6}>
-        <Typography variant='subtitle1'>Weather App</Typography>
+        <h2>Weather App</h2>
+        <p>A campfire themed app to display the weather in the chosen country including a 3 hour breakdown</p>
       </Grid>
     </Grid>
+    </Card>
   )
 } 
 

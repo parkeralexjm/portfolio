@@ -19,14 +19,14 @@ const Hero = () => {
 }
 
 const PersonalTitle = styled.h1`
-    font-size: 5rem;
+    font-size: 2rem;
 		text-transform: uppercase;
 		text-align: center;
 		margin: 0;
 `
 
 const SkillTitle = styled.p`
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: green;
 		text-align: center;
 `
