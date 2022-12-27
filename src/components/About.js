@@ -1,42 +1,47 @@
 import React from 'react'
 import { Box, Grid, Button, Typography } from '@mui/material'
 import { SkillButton } from './Utilities/SkillButton.js'
+import { Stack } from '@mui/system'
 
 const About = () => {
     return (
-      <Box sx={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '90rem', margin: 'auto', width: '90%' }}>
-        <h1>About Me</h1>
-        <Box sx={{ flexGrow: 1, textAlign: 'left' }}>
+      <Box sx={{backgroundColor: "#f5f5f5"}}>
+      <Box sx={{ maxWidth: '90rem', margin: 'auto', width: '90%', padding: {xs: '6rem 0', md: '9rem 0'} }}>
+        <Stack sx={{ alignItems: 'center', textAlign: 'center' }} spacing={3}>
+          <Typography variant='h2' sx={{ fontWeight: '700', fontSize: {xs: '2.5rem', sm:'3.75rem' }}}>ABOUT ME</Typography>
+          <Box sx={{ width: '50px', height: '10px', backgroundColor: '#fad037', borderRadius: '10px'}}></Box>
+          <Typography variant='subtitle1' sx={{ fontWeight: '400', fontSize: {xs: '1.25rem', sm:'1.5rem'}}}>A description of me</Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Box>
-                <Typography variant="subtitle1" gutterBottom>
+              <Box sx={{ flexGrow: 1, textAlign: 'left', pr: '1rem' }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: '500', fontSize: '1.1rem' }} gutterBottom>
                   My Journey
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                  I am an aspiring Full-Stack Website and Web application developer commmited to something.
+                  I am an aspiring <strong>Full-Stack Website and Web application developer</strong> commmited to something.
                 </Typography>
                 <Typography variant='body1' gutterBottom>
                   Currently employed as a secondary school middle leader I experimented with a career change
                   by completing the CS50 Computer Science course from Harvard X. Having found a passion for 
                   web design I have since completed 'The Odin Project' sequence of online learning, expanding
-                  on that experience using Material UI.
+                  on that experience using <strong>Material UI</strong>. You can find some examples of my work
+                  in the <strong>projects</strong> section.
                 </Typography>
                 <Typography variant='body1' gutterBottom>
                   I'm open to all employment experiences where I can contribute, learn and grow.
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center'}}>
-                  <Button variant='contained'>
+                  <Button variant='contained' sx={{ mt:2, backgroundColor: '#f25641'}}>
                     Contact Me
                   </Button>
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Typography variant="subtitle1" gutterBottom>
+            <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
+              <Typography variant="subtitle1" sx={{ fontWeight: '500', fontSize: '1.1rem' }} gutterBottom>
                 My Skills
               </Typography>
-              <Box>
+              <Box sx={{alignItems: 'left'}}>
                 <SkillButton variant='confined' disabled>CSS</SkillButton>
                 <SkillButton variant='confined' disabled>ReactJS</SkillButton>
                 <SkillButton variant='confined' disabled>Material UI</SkillButton>
@@ -50,8 +55,9 @@ const About = () => {
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </Stack>
       </Box>  
+      </Box>
     )
 }
 

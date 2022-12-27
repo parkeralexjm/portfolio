@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.1",
     "@mui/styled-engine-sc": "^5.11.0",
@@ -15,7 +16,9 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.1",
     "react-scripts": "5.0.1",
+    "react-scroll-to-component": "^1.0.2",
     "styled-components": "^5.3.6",
+    "typeface-roboto": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

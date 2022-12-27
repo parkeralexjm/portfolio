@@ -1,16 +1,17 @@
 import React from 'react'
-import { Grid, Box, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   return (
-      <Box sx={{ backgroundColor: 'black', height: '20vh', width: '100%', position: 'relative' }}>
-        <Grid container sx={{ alignItems: 'center' }}>
-          <Grid item xs={6}>
-            <Typography variant='h3' color={'white'}>Alex Parker</Typography>
-          </Grid>
-          <Grid item xs={6}>
+      <Box sx={{ backgroundColor: 'black', width: '100%', position: 'relative' }}>
+        <Box sx={{ display: 'flex', padding: '3rem 0', justifyContent: 'space-between', width: '80%', margin: 'auto'}}>
+          <Box>
+            <Typography variant='h5' sx={{ color: 'white', letterSpacing: '0.15rem', fontWeight: '700'}}>ALEX PARKER</Typography>
+            <Typography variant='subtitle1' sx={{ display: {xs:'none', sm:'block'}, color: 'white'}}>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
+          </Box>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'flex-end'}}>
             <Box sx={{ display: 'flex'}}>
               <Typography variant='subtitle2' color={'white'}>Github</Typography>
               <GitHubIcon sx={{ color: 'white' }}/>
@@ -19,10 +20,10 @@ const Footer = () => {
               <Typography variant='subtitle2' color={'white'}>LinkedIn</Typography>
               <LinkedInIcon sx={{ color: 'white' }}/>
             </Box>
-          </Grid>
-          <Grid item xs={12}>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
+        <Box sx={{ margin: 'auto', width: '80%', display: 'flex', padding: '1rem 0', justifyContent: 'center', alignContent: 'center', alignItems: 'center', borderTop:'solid 1px lightgrey'}}>
+          <Typography variant='h6' color={'white'} sx={{ fontSize: '0.65rem' }}>&copy; Copyright 2022. Made by Alex Parker</Typography>        </Box>
       </Box>
   )
 

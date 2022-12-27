@@ -5,10 +5,11 @@ import Match from './Projects/Match'
 
 const Portfolio = () => {
     return (
-        <Box  sx={{maxWidth: '90rem', margin: 'auto', width: '90%' }}>
-            <Stack sx={{alignItems: 'center'}}>
-                <Typography variant='h3'>My Projects</Typography>
-                <Typography variant='subtitle1' sx={{ p:2}}>A selection of my Github projects</Typography>
+        <Box className='project' sx={{maxWidth: '90rem', margin: 'auto', width: '90%', padding: {xs: '6rem 0', md: '9rem 0'}  }}>
+            <Stack sx={{alignItems: 'center'}} spacing={3}>
+                <Typography variant='h2' sx={{ fontWeight: '700', fontSize: {xs: '2.5rem', sm:'3.75rem' }}}>PROJECTS</Typography>
+                <Box sx={{ width: '50px', height: '10px', backgroundColor: '#72dbd1', borderRadius: '10px'}}></Box>
+                <Typography variant='subtitle1' sx={{ fontWeight: '400', fontSize: {xs: '1.25rem', sm:'1.5rem'}}}>A selection of my Github projects</Typography>
                 <Weather></Weather>
                 <Match></Match>
             </Stack>

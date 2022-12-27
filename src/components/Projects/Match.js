@@ -1,17 +1,18 @@
 import React from 'react'
-import { Card, Grid } from '@mui/material'
+import { Card, Grid, Button, Typography } from '@mui/material'
 import appimg from '../assets/Match.png'
 
 const Match = () => {
   return (
     <Card elevation={4}>
-      <Grid container sx={{ marginTop: '0.5rem'}}>
-        <Grid item xs={6} container sx={{ justifyContent: "center"}}>
+      <Grid container sx={{padding: '1rem'}}>
+        <Grid item xs={12} md={6} container sx={{ justifyContent: "center"}}>
           <img src={`${appimg}`} alt='Match App' loading='lazy' width={'75%'}></img>
         </Grid>
-        <Grid item xs={6}>
-          <h2>Match App</h2>
-          <p>A game utilising props within react (elaborate)</p>
+        <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: {xs:'center', md: 'flex-start'}, justifyContent: "space-around"}}>
+          <Typography variant='h4'>Match App</Typography>
+          <Typography variant='main1'>A picture memory game designed using react props</Typography>
+          <Button href='#' variant='contained'>Github</Button>
         </Grid>
       </Grid>
     </Card>

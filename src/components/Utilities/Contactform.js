@@ -1,11 +1,13 @@
 import React from "react";
-import { Box, Grid, TextField, Button } from '@mui/material'
+import { Grid, TextField } from '@mui/material'
+import { StyledYellowButton } from "./ColorLinks";
 
 function Contactform() {
 
   return (
       <Grid container spacing={2} sx={{padding: '5%'}}>
-        <Grid item xs={12} md={6} sx={{display: 'flex'}}>
+        <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+          <label for="name-required" style={{ marginBottom: '0.5rem'}}>Name</label>
           <TextField
             required
             id="name-required"
@@ -15,7 +17,8 @@ function Contactform() {
             fullWidth
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <label for="email-required" style={{marginBottom: '0.5rem'}}>Email</label>
           <TextField
             required
             id="email-required"
@@ -25,7 +28,8 @@ function Contactform() {
             fullWidth
           />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+          <label for="message-required" style={{ marginBottom: '0.5rem'}}>Message</label>
           <TextField
             required
             id="message-required"
@@ -38,7 +42,7 @@ function Contactform() {
           />
         </Grid>
         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'flex-end'}}>
-          <Button variant="contained">Submit</Button>
+          <StyledYellowButton variant="contained">Submit</StyledYellowButton>
         </Grid>
       </Grid>
 
