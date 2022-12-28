@@ -11,14 +11,14 @@ const Footer = () => {
             <Typography variant='h5' sx={{ color: 'white', letterSpacing: '0.15rem', fontWeight: '700'}}>ALEX PARKER</Typography>
             <Typography variant='subtitle1' sx={{ display: {xs:'none', sm:'block'}, color: 'white'}}>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
           </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'flex-end'}}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'flex-end', paddingLeft: '20%'}}>
             <Box sx={{ display: 'flex'}}>
               <Typography variant='subtitle2' color={'white'}>Github</Typography>
-              <GitHubIcon sx={{ color: 'white' }}/>
+              <GitHubIcon sx={{ color: 'white', pl:1 }}/>
             </Box>
             <Box item sx={{ display: 'flex'}}>
               <Typography variant='subtitle2' color={'white'}>LinkedIn</Typography>
-              <LinkedInIcon sx={{ color: 'white' }}/>
+              <LinkedInIcon sx={{ color: 'white', pl:1 }}/>
             </Box>
           </Box>
         </Box>

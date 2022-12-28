@@ -9,9 +9,9 @@ const Match = () => {
         <Grid item xs={12} md={6} container sx={{ justifyContent: "center"}}>
           <img src={`${appimg}`} alt='Match App' loading='lazy' width={'75%'}></img>
         </Grid>
-        <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: {xs:'center', md: 'flex-start'}, justifyContent: "space-around"}}>
+        <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: {xs:'center', md: 'flex-start'}, justifyContent: "space-around", textAlign: {xs:'center', md: 'left'}}}>
           <Typography variant='h4'>Match App</Typography>
-          <Typography variant='main1'>A picture memory game designed using react props</Typography>
+          <Typography variant='main1' sx={{ width: {xs:'75%', md: '100%'}, py: {xs:'1rem', md: '0'}}}>A picture memory game designed using react props</Typography>
           <Button href='#' variant='contained'>Github</Button>
         </Grid>
       </Grid>
