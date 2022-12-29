@@ -4,17 +4,25 @@ import { SkillButton } from './Utilities/SkillButton.js'
 import { Stack } from '@mui/system'
 
 const About = () => {
+  const handleClickScrollContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
     return (
-      <Box sx={{backgroundColor: "#f5f5f5"}}>
+      <Box id='about' sx={{backgroundColor: "#f5f5f5"}}>
       <Box sx={{ maxWidth: '90rem', margin: 'auto', width: '90%', padding: {xs: '6rem 0', md: '9rem 0'} }}>
         <Stack sx={{ alignItems: 'center', textAlign: 'center' }} spacing={3}>
-          <Typography variant='h2' sx={{ fontWeight: '700', fontSize: {xs: '2.5rem', sm:'3.75rem' }}}>ABOUT ME</Typography>
+          <Typography variant='h3'>ABOUT ME</Typography>
           <Box sx={{ width: '50px', height: '10px', backgroundColor: '#fad037', borderRadius: '10px'}}></Box>
-          <Typography variant='subtitle1' sx={{ fontWeight: '400', fontSize: {xs: '1.25rem', sm:'1.5rem'}}}>A description of me</Typography>
+          <Typography variant='subtitle1'>A description of me</Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Box sx={{ flexGrow: 1, textAlign: 'left', pr: '1rem' }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: '500', fontSize: '1.1rem' }} gutterBottom>
+                <Typography variant="subtitle1" gutterBottom>
                   My Journey
                 </Typography>
                 <Typography variant='body1' gutterBottom>
@@ -31,14 +39,14 @@ const About = () => {
                   I'm open to all employment experiences where I can contribute, learn and grow.
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center'}}>
-                  <Button variant='contained' sx={{ mt:2, backgroundColor: '#f25641'}}>
+                  <Button  color="error" variant='contained' sx={{ mt:2 }} onClick={handleClickScrollContact}>
                     Contact Me
                   </Button>
                 </Box>
               </Box>
             </Grid>
             <Grid item xs={12} md={6} sx={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
-              <Typography variant="subtitle1" sx={{ fontWeight: '500', fontSize: '1.1rem' }} gutterBottom>
+              <Typography variant="subtitle1" gutterBottom>
                 My Skills
               </Typography>
               <Box sx={{alignItems: 'left'}}>

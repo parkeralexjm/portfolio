@@ -23,7 +23,7 @@ const Footer = () => {
           </Box>
         </Box>
         <Box sx={{ margin: 'auto', width: '80%', display: 'flex', padding: '1rem 0', justifyContent: 'center', alignContent: 'center', alignItems: 'center', borderTop:'solid 1px lightgrey'}}>
-          <Typography variant='h6' color={'white'} sx={{ fontSize: '0.65rem' }}>&copy; Copyright 2022. Made by Alex Parker</Typography>        </Box>
+          <Typography variant='h6' color={'white'}>&copy; Copyright 2022. Made by Alex Parker</Typography>        </Box>
       </Box>
   )
 

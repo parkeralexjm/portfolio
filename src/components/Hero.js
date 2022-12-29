@@ -4,14 +4,22 @@ import background from './assets/lowpoly.png'
 import { StyledTealButton } from './Utilities/ColorLinks';
 
 const Hero = () => {
+	const handleClickScrollProject = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 	return (
 		<>
-			<Box sx={{ height: {xs:'60vh', sm:'100vh'}, position: 'relative', minHeight: '40rem', maxHeight: '120rem', backgroundImage:`linear-gradient(90deg, rgba(250, 250, 250, 1), rgba(117, 19, 93, 0)),url(${background})`, backgroundSize: 'cover' }}>
-				<Stack sx={{ position: 'absolute', top: '50%', left: '50%', transform: {xs: 'translate(-50%, -43%)',sm:'translate(-50%,-35%)'}, width: '90%', margin: 'auto', alignItems: 'center'}} spacing={4}>
-					<Typography variant='h1' sx={{fontSize: {xs: '3rem', sm:'3.75rem'}, fontWeight: '700', textAlign: 'center', margin: '0', letterSpacing: '0.15rem'}}>HI, I'M ALEX PARKER</Typography>
-					<Typography variant='subtitle1' sx={{ fontSize: {xs: '1.5rem', sm: '1.8rem'}, textAlign: 'center', width:'80%'}}>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
+			<Box id='hero' sx={{ height: {xs:'60vh', sm:'100vh'}, position: 'relative', minHeight: '40rem', maxHeight: '120rem', backgroundImage:`linear-gradient(90deg, rgba(250, 250, 250, 1), rgba(117, 19, 93, 0)),url(${background})`, backgroundSize: 'cover' }}>
+				<Stack sx={{ position: 'absolute', top: '50%', left: '50%', transform: {xs: 'translate(-50%, -43%)',sm:'translate(-50%,-35%)'}, width: '90%', margin: 'auto', alignItems: 'center'}} spacing={{xs:5, sm:7, md: 9}}>
+					<Typography variant='h1'>HI, I'M ALEX PARKER</Typography>
+					<Typography variant='h2'>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
 					<Box sx={{ textAlign: 'center'}}>
-						<StyledTealButton>Projects</StyledTealButton>
+						<StyledTealButton variant='contained' size='large' onClick={handleClickScrollProject} >Projects</StyledTealButton>
 					</Box>
 				</Stack>
 			</Box>
