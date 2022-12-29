@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Grid, Button, Typography } from '@mui/material'
-import { SkillButton } from './Utilities/SkillButton.js'
 import { Stack } from '@mui/system'
 
 const About = () => {
@@ -39,7 +38,7 @@ const About = () => {
                   I'm open to all employment experiences where I can contribute, learn and grow.
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center'}}>
-                  <Button  color="error" variant='contained' sx={{ mt:2 }} onClick={handleClickScrollContact}>
+                  <Button color="error" variant='contained' sx={{ mt:2 }} onClick={handleClickScrollContact}>
                     Contact Me
                   </Button>
                 </Box>
@@ -50,16 +49,16 @@ const About = () => {
                 My Skills
               </Typography>
               <Box sx={{alignItems: 'left'}}>
-                <SkillButton variant='confined' disabled>CSS</SkillButton>
-                <SkillButton variant='confined' disabled>ReactJS</SkillButton>
-                <SkillButton variant='confined' disabled>Material UI</SkillButton>
-                <SkillButton variant='confined' disabled>HTMl</SkillButton>
-                <SkillButton variant='confined' disabled>JavaScript</SkillButton>
-                <SkillButton variant='confined' disabled>Responsive Design</SkillButton>
-                <SkillButton variant='confined' disabled>Entry SQL</SkillButton>
-                <SkillButton variant='confined' disabled>Node.JS</SkillButton>
-                <SkillButton variant='confined' disabled>GIT</SkillButton>
-                <SkillButton variant='confined' disabled>Linux</SkillButton>
+                <Button variant='confined' disabled sx={{ backgroundColor: '#dddddd' }}>CSS</Button>
+                <Button variant='confined' disabled>ReactJS</Button>
+                <Button variant='confined' disabled>Material UI</Button>
+                <Button variant='confined' disabled>HTMl</Button>
+                <Button variant='confined' disabled>JavaScript</Button>
+                <Button variant='confined' disabled>Responsive Design</Button>
+                <Button variant='confined' disabled>Entry SQL</Button>
+                <Button variant='confined' disabled>Node.JS</Button>
+                <Button variant='confined' disabled>GIT</Button>
+                <Button variant='confined' disabled>Linux</Button>
               </Box>
             </Grid>
           </Grid>

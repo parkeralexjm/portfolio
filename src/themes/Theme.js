@@ -11,6 +11,10 @@ const theme = createTheme({
     error: {
       main: '#f25641',
       contrastText: 'black'
+    },
+    action: {
+      disabledBackground: '#dddddd',
+      disabled: '#626262',
     }
   },
   typography: {
@@ -25,9 +29,9 @@ const theme = createTheme({
       textAlign: 'center',
     },
     h2: {
-      fontSize: '1.5rem',
+      fontSize: '1.4rem',
       '@media (min-width:600px)': {
-        fontSize: '1.8rem'
+        fontSize: '1.7rem'
       },
       fontWeight: '400',
       textAlign: 'center',
