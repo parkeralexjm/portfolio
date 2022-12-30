@@ -1,7 +1,6 @@
 import React from 'react';
-import { Stack, Box, Typography } from '@mui/material'
+import { Stack, Box, Typography, Button } from '@mui/material'
 import background from './assets/lowpoly.png'
-import { StyledTealButton } from './Utilities/ColorLinks';
 
 const Hero = () => {
 	const handleClickScrollProject = () => {
@@ -19,7 +18,7 @@ const Hero = () => {
 					<Typography variant='h1'>HI, I'M ALEX PARKER</Typography>
 					<Typography variant='h2'>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
 					<Box sx={{ textAlign: 'center'}}>
-						<StyledTealButton variant='contained' size='large' onClick={handleClickScrollProject} >Projects</StyledTealButton>
+						<Button variant='contained' size='large' onClick={handleClickScrollProject} >Projects</Button>
 					</Box>
 				</Stack>
 			</Box>

@@ -3,9 +3,9 @@ import { Grid, TextField, Button, Snackbar, Alert } from '@mui/material';
 import validate from 'validate.js';
 import emailjs from 'emailjs-com';
 
-const USER_ID = 'HJ_lNx77PqrIwMwk-'
-const TEMPLATE_ID = 'template_k5g7n6o'
-const SERVICE_ID = 'service_tcvxres'
+const USER_ID = process.env.REACT_APP_EMAILJS_USERID
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID
 
 const schema = {
   name: {
@@ -166,7 +166,7 @@ function Contactform() {
         onClose={handleClose}
         >
           <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-            Message sent!
+            Your message has been sent!
           </Alert>
 
       </Snackbar>
