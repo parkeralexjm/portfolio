@@ -18,7 +18,7 @@ const About = () => {
         <Stack sx={{ alignItems: 'center', textAlign: 'center' }} spacing={3}>
           <Typography variant='h3'>ABOUT ME</Typography>
           <Box sx={{ width: '50px', height: '10px', backgroundColor: '#fad037', borderRadius: '10px'}}></Box>
-          <Typography variant='subtitle1'>A description of me</Typography>
+          <Typography variant='subtitle1'>Here you will find more information about me, what I do, and my current skills in programming and technology</Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Box sx={{ flexGrow: 1, textAlign: 'left', pr: '1rem' }}>
