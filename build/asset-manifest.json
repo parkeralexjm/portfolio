@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.b05fb8ec.css",
-    "main.js": "/static/js/main.e27ec6e0.js",
+    "main.css": "/static/css/main.2ad55101.css",
+    "main.js": "/static/js/main.5f737831.js",
     "static/media/Weather.png": "/static/media/Weather.17f49e7651d82fe277c8.png",
+    "static/media/lowpoly.png": "/static/media/lowpoly.6f4f8273b0e828db2dfd.png",
     "static/media/Match.png": "/static/media/Match.f9058a43f141d82572ae.png",
+    "static/media/lowpoly2.png": "/static/media/lowpoly2.bd1c670aabb34df16fca.png",
     "static/media/roboto-latin-900italic.woff": "/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
     "static/media/roboto-latin-500italic.woff": "/static/media/roboto-latin-500italic.18d00f739ff1e1c52db1.woff",
@@ -29,11 +31,11 @@
     "static/media/roboto-latin-400.woff2": "/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/index.html",
-    "main.b05fb8ec.css.map": "/static/css/main.b05fb8ec.css.map",
-    "main.e27ec6e0.js.map": "/static/js/main.e27ec6e0.js.map"
+    "main.2ad55101.css.map": "/static/css/main.2ad55101.css.map",
+    "main.5f737831.js.map": "/static/js/main.5f737831.js.map"
   },
   "entrypoints": [
-    "static/css/main.b05fb8ec.css",
-    "static/js/main.e27ec6e0.js"
+    "static/css/main.2ad55101.css",
+    "static/js/main.5f737831.js"
   ]
 }

@@ -18,6 +18,9 @@ const theme = createTheme({
     }
   },
   typography: {
+    body1: {
+      lineHeight: '2rem'
+    },
     h1: {
       fontSize: '3rem',
       '@media (min-width:700px)': {
@@ -35,7 +38,8 @@ const theme = createTheme({
       },
       fontWeight: '400',
       textAlign: 'center',
-      width: '80%'
+      width: '80%',
+      lineHeight: '2rem'
     },
     h3: {
       fontSize: '2.5rem',

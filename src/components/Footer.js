@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -9,15 +9,15 @@ const Footer = () => {
         <Box sx={{ display: 'flex', padding: '3rem 0', justifyContent: 'space-between', width: '80%', margin: 'auto'}}>
           <Box>
             <Typography variant='h5' color={'white'}>ALEX PARKER</Typography>
-            <Typography variant='subtitle3' color={'white'}>\A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
+            <Typography variant='subtitle3' color={'white'}>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
           </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'flex-end', paddingLeft: '20%'}}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end', paddingLeft: '20%'}}>
             <Box sx={{ display: 'flex'}}>
-              <Typography variant='subtitle2' color={'white'}>Github</Typography>
+              <Link href='https://github.com/parkeralexjm' target="_blank" rel="noreferrer noopener" variant='subtitle2' underline='none' color='white'>Github</Link>
               <GitHubIcon sx={{ color: 'white', pl:1 }}/>
             </Box>
             <Box item sx={{ display: 'flex'}}>
-              <Typography variant='subtitle2' color={'white'}>LinkedIn</Typography>
+              <Link href='https://www.linkedin.com/in/parkeralexjm/' target="_blank" rel="noreferrer noopener" variant='subtitle2' underline='none' color='white'>LinkedIn</Link>
               <LinkedInIcon sx={{ color: 'white', pl:1 }}/>
             </Box>
           </Box>
