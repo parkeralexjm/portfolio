@@ -18,7 +18,6 @@ const About = () => {
         <Stack sx={{ alignItems: 'center', textAlign: 'center' }} spacing={3}>
           <Typography variant='h3'>ABOUT ME</Typography>
           <Box sx={{ width: '50px', height: '10px', backgroundColor: '#fad037', borderRadius: '10px'}}></Box>
-          <Typography variant='subtitle1'>Here you will find more information about me, what I do, and my current skills in programming and technology</Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Box sx={{ flexGrow: 1, textAlign: 'left', pr: '1rem' }}>
@@ -30,7 +29,7 @@ const About = () => {
                   expanding my digital toolset whilst providing value to any final product.
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                  Currently employed as a secondary school middle leader, I experimented with a career change
+                  Currently employed as the lead for A-Level sciences , I experimented with a career change
                   by completing the CS50 Computer Science course from Harvard X. Having found a passion for 
                   web design I have since completed 'The Odin Project' sequence of online learning, expanding
                   on that experience using <strong>Material UI</strong>. You can find some examples of my work
