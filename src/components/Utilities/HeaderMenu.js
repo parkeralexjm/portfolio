@@ -2,6 +2,7 @@ import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
+import { handleClickScrollAbout, handleClickScrollProjects, handleClickScrollContact } from './SectionLinks';
 
 export default function HeaderMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -9,8 +10,23 @@ export default function HeaderMenu() {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+const handleClose = () => {
+  setAnchorEl(null);
+}
+
+  const handleCloseAbout = () => {
     setAnchorEl(null);
+    handleClickScrollAbout();
+  };
+
+  const handleCloseProjects = () => {
+    handleClickScrollProjects();
+    setAnchorEl(null);
+  };
+
+  const handleCloseContact = () => {
+    setAnchorEl(null);
+    handleClickScrollContact();
   };
 
   return (
@@ -33,9 +49,9 @@ export default function HeaderMenu() {
           'aria-labelledby': 'basic-button'
         }}
       >
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Projects</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
+        <MenuItem onClick={handleCloseAbout}>About</MenuItem>
+        <MenuItem onClick={handleCloseProjects}>Projects</MenuItem>
+        <MenuItem onClick={handleCloseContact}>Contact</MenuItem>
       </Menu>
     </div>
   );

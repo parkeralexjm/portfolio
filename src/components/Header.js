@@ -3,36 +3,9 @@ import { Box, Link } from '@mui/material'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HeaderMenu from './Utilities/HeaderMenu';
 import { StyledRedLink, StyledTealLink, StyledYellowLink } from './Utilities/ColorLinks';
+import { handleClickScrollAbout, handleClickScrollHero, handleClickScrollProjects, handleClickScrollContact } from './Utilities/SectionLinks';
 
 const Header = () => {
-  const handleClickScrollHero = () => {
-    const element = document.getElementById('hero'); 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleClickScrollAbout = () => {
-    const element = document.getElementById('about'); 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleClickScrollProjects = () => {
-    const element = document.getElementById('projects'); 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleClickScrollContact = () => {
-    const element = document.getElementById('contact'); 
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  
   return (
     <Box sx={{ position: 'fixed', backgroundColor: '#ffffff', width: '100%', zIndex:'10', boxShadow: '0 10px 100px rgb(0 0 0 / 10%)'}}>
       <Box sx={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding: {xs:'1rem 3rem',sm:'1.5rem 2rem', md:'1.5rem 4rem', lg:'2rem 6rem', xl:'2rem 20rem'}, zIndex:'100'}}>
