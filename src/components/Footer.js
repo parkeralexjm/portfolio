@@ -8,8 +8,8 @@ const Footer = () => {
       <Box sx={{ backgroundColor: 'black', width: '100%', position: 'relative' }}>
         <Box sx={{ display: 'flex', padding: '3rem 0', justifyContent: 'space-between', width: '80%', margin: 'auto'}}>
           <Box>
-            <Typography variant='h5' sx={{ color: 'white', letterSpacing: '0.15rem', fontWeight: '700'}}>ALEX PARKER</Typography>
-            <Typography variant='subtitle1' sx={{ display: {xs:'none', sm:'block'}, color: 'white'}}>A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
+            <Typography variant='h5' color={'white'}>ALEX PARKER</Typography>
+            <Typography variant='subtitle3' color={'white'}>\A front-end focused web developer aspiring to build Websites and Web Applications</Typography>
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'flex-end', paddingLeft: '20%'}}>
             <Box sx={{ display: 'flex'}}>

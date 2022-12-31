@@ -45,6 +45,10 @@ const theme = createTheme({
       fontWeight: '500',
       letterSpacing: '0.15rem'
     },
+    h5: {
+      fontWeight: '700',
+      letterSpacing: '0.15rem'
+    },
     h6: {
       fontSize: '0.65',
     },
@@ -54,6 +58,12 @@ const theme = createTheme({
         fontSize: '1.5rem'
       },
       fontWeight: '400'
+    },
+    subtitle3: {
+      display: 'none',
+      '@media (min-width:600px)': {
+        display: 'block'
+      }
     }
   }
 });
